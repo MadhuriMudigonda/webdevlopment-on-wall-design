@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+  
+      .cover{
+            display:absolute;
+            padding:50px 100px;
+        }
+        .column{
+            
+            width: 33.33%;
+            min-height: 250px;
+            float:left;
+            
+        }        
+        .one{
+            margin: 30px;
+            padding: 30px;
+           
+        }.one image{
+            width:100%;
+            
+           
+        }
+        .nav{
+                    
+    
+  
+    background-color: black;
+    display:flex;
+    padding:10px;
+    font-size:20px;
+    text-decoration:none;
+    align-items:center;
+    text-align:center;
+}
+.nav ul{
+    color:red;
+    padding-left: 47%;
+    
+}
+.nav a{
+    color:red;
+    padding-left:25%;
+    text-decoration: wavy;
+    
+}
+  .column .one image{
+        width: 200px;
+        height: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul href="/">Home</ul>
+        <a href="/iop">contact us</a>
+
+    </nav>
+    <div class="cover">
+        <div class="column"><div class="one">
+            <image src="{{url_for('static',filename='w2.jpg')}}" ></div></div>
+        <div class="column"><div class="one"><image src="{{url_for('static',filename='w3.jpg')}}"></div></div>
+        <div class="column"><div class="one"><image src="{{url_for('static',filename='w4.jpg')}}"></div></div>
+    </div>
+            <div class="cover">
+        <div class="column"><div class="one">
+            <image src="{{url_for('static',filename='w7.jpg')}}"></div></div>
+        <div class="column"><div class="one"></div>
+        <div class="column"><div class="one"><image src="{{url_for('static',filename='w6.jpg')}}"></div></div>
+    </div><div class="cover">
+        <div class="column"><div class="one">
+            </div></div>
+        <div class="column"><div class="one"><image src="{{url_for('static',filename='w8.jpg')}}"></div></div>
+        
+    </div>
+</body>
